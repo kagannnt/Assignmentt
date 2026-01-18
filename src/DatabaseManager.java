@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseManager {
-   .
     private static final String URL = "jdbc:sqlite:fitness.db";
 
     public List<Workout> getWorkoutsFromDB() {
