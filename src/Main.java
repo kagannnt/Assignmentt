@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // Создаем объект для работы с базой данных
+
         DatabaseManager dbManager = new DatabaseManager();
 
         System.out.println("=== Регистрация в Smart Fitness (DB Mode) ===");
@@ -13,10 +13,10 @@ public class Main {
         System.out.print("Введите ваш вес (кг): ");
         double weight = sc.nextDouble();
 
-        // ЗАГРУЗКА ДАННЫХ ИЗ БАЗЫ ВМЕСТО РУЧНОГО СПИСКА
+
         List<Workout> dataPool = dbManager.getWorkoutsFromDB();
 
-        // Проверка на случай, если база пуста
+
         if (dataPool.isEmpty()) {
             System.out.println("\n[ОШИБКА] База данных пуста или не подключена!");
             return;
@@ -29,7 +29,7 @@ public class Main {
 
         Class<?> targetClass = (choice == 1) ? Cardio.class : Strength.class;
 
-        // Фильтрация и сортировка данных, пришедших из БД
+
         List<Workout> myPlan = dataPool.stream()
                 .filter(targetClass::isInstance)
                 .sorted(Comparator.comparingInt(Workout::getDurationMin))
