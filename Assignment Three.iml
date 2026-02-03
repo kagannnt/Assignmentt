@@ -7,11 +7,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="sqlite-jdbc-3.45.1.0" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.45.1.0" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/slf4j-simple-1.7.36.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/gson-2.10.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -20,7 +20,16 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/slf4j-api-1.7.36.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/sqlite-jdbc-3.45.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/slf4j-simple-1.7.36.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
